@@ -40,4 +40,4 @@ if uploaded_file is not None:
     confidence = np.max(prediction) * 100  # Confidence percentage
         
     # Display results
-    st.success(f"### Prediction: {result} ({confidence:.1f}%)")
+    st.success(f"### Prediction: {result} ({confidence:.1f}% )")
