@@ -11,8 +11,8 @@ training_images, testing_images = training_images / 255, testing_images / 255
 class_names = ['plane', 'car', 'ship', 'truck']
 
 # Display some sample images from the dataset
-for i in range(16):
-    plt.subplot(4, 4, i + 1)
+for i in range(4):
+    plt.subplot(2, 2, i + 1)
     plt.xticks([])
     plt.yticks([])
     plt.imshow(training_images[i], cmap=plt.cm.binary)
