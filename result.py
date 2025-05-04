@@ -37,4 +37,4 @@ img=img[None,:]
 # Make a prediction
 prediction = model.predict(img)
 index = np.argmax(prediction)
-print(f"Prediction is: {class_names[index]} ({confidence:.2f}%)")
+print(f"Prediction is: {class_names[index]} {confidence:.2f}%")
