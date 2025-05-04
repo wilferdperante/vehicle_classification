@@ -38,4 +38,4 @@ if uploaded_file is not None:
     index = np.argmax(prediction)
     result = class_names[index]
     confidence = class_names[confidence]
-    st.success(f"### Prediction: `{result}` `{confidence}`")
+    st.success(f"### Prediction: `{result} {confidence}`")
