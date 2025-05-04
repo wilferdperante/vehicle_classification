@@ -37,5 +37,7 @@ if uploaded_file is not None:
     prediction = model.predict(img_array)
     index = np.argmax(prediction)
     result = class_names[index]
-    confidence1 = class_names[confidence]
-    st.success(f"### Prediction: `{result} {confidence}`")
+    confidence = np.max(prediction) * 100  # Confidence percentage
+        
+    # Display results
+    st.success(f"### Prediction: {result} ({confidence:.1f}% confidence)")
